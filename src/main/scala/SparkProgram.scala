@@ -18,20 +18,19 @@ object SparkProgram {
     //one key object of functional programming is to use immutable objects as often possible
 
     //differente between  var val and def
-      // var =>Since it’s mutable, its value may change through the program lifetime.
-      // val => It’s an immutable reference, meaning that its value never changes
-      // def => def is a function declaration
+    // var =>Since it’s mutable, its value may change through the program lifetime.
+    // val => It’s an immutable reference, meaning that its value never changes
+    // def => def is a function declaration
 
     // procesare hdfs filse system, s3
     // driver progam  => trimis manager de cluster spark yarn => executa pe hardware corespunzator :) scoate datele le
-      // uneste si trece la urmatorul pas
-
+    // uneste si trece la urmatorul pas
 
 
     //Spark =  sparckStreaming  Procesare
-           // = machine learning
-           // = sql lite
-           // = > don't care
+    // = machine learning
+    // = sql lite
+    // = > don't care
 
     //RDD => resilient distributed dataset (set de date elastice, distribuite)
 
@@ -112,11 +111,8 @@ object SparkProgram {
     //Erro and try catch
     // concat list use ++
     //operation : reverse, sorted, ++, max, sum, contains()
-    val error = util.Try(-1/0) getOrElse "test"
+    val error = util.Try(-1 / 0) getOrElse "test"
     println(error)
-
-
-
 
   }
 
