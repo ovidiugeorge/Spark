@@ -1,5 +1,14 @@
+
+import org.apache.spark._
+import org.apache.spark.SparkContext._
+import org.apache.log4j._
+//import scala.util
+
+
 object SparkProgram {
 
+
+  Logger.getLogger("org").setLevel(Level.ERROR)
 
   def function1(x: Int): Int = {
     x
@@ -10,7 +19,7 @@ object SparkProgram {
   }
 
   println(function1(100000000))
-
+ 
   def main(args: Array[String]): Unit = {
 
     //work on jvm
@@ -34,6 +43,21 @@ object SparkProgram {
 
     //RDD => resilient distributed dataset (set de date elastice, distribuite)
     // FlatMap vs Map :=> with flatMap i can create other elemnts and with map i cand only transformation
+    //lookup
+
+    //Cache is a synonym of Persist with MEMORY_ONLY storage level(i.e) using Cache technique we can save intermediate results in memory only when needed.
+
+
+
+    //spark-ubmit --class clasa aplicatia.jar
+    //sbt assemnly
+
+
+    val sc = new SparkContext("local[*]","SparkProgram")
+    val nameFile = sc.textFile("../DontCare")
+    println(nameFile)
+
+
 
     val hello: String = "Sanatate"
     println(hello)
@@ -111,10 +135,15 @@ object SparkProgram {
     //Erro and try catch
     // concat list use ++
     //operation : reverse, sorted, ++, max, sum, contains()
-    val error = util.Try(-1 / 0) getOrElse "test"
-    println(error)
+    //.val error = util.Try( -1 / 0) getOrElse "BIG ERROR"
+    //println(error)
+
+
+    //list apply reduceByKey, then apply collect then result.forEatch(something)
 
   }
+
+
 
 
 }
