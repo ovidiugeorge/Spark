@@ -33,7 +33,7 @@ object SparkProgram {
     // = > don't care
 
     //RDD => resilient distributed dataset (set de date elastice, distribuite)
-
+    // FlatMap vs Map :=> with flatMap i can create other elemnts and with map i cand only transformation
 
     val hello: String = "Sanatate"
     println(hello)
