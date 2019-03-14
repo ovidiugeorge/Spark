@@ -47,14 +47,8 @@ object SparkProgram {
 
     //Cache is a synonym of Persist with MEMORY_ONLY storage level(i.e) using Cache technique we can save intermediate results in memory only when needed.
 
-
-
     //spark-ubmit --class clasa aplicatia.jar
     //sbt assemnly
-
-
-
-
 
     //DataSet = DataFrame+DataFrame+..+ DataFrame
     //CompileToDataSet -> .toDS() == import spark.implicits._ ==
