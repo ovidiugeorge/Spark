@@ -19,7 +19,7 @@ object SparkProgram {
   }
 
   println(function1(100000000))
- 
+
   def main(args: Array[String]): Unit = {
 
     //work on jvm
@@ -51,6 +51,14 @@ object SparkProgram {
 
     //spark-ubmit --class clasa aplicatia.jar
     //sbt assemnly
+
+
+
+
+
+    //DataSet = DataFrame+DataFrame+..+ DataFrame
+    //CompileToDataSet -> .toDS() == import spark.implicits._ ==
+    // datasets work like database and i can do a sql like operation.
 
 
     val sc = new SparkContext("local[*]","SparkProgram")
