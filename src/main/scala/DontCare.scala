@@ -16,7 +16,7 @@ object DontCare {
     val  id =  arr.head
     for
 
-
+  zip zcaLA
   }
 
   def splitDate(idprod:String, start: String, end: String): Array[String] = {
