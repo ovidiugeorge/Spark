@@ -1,14 +1,13 @@
-
+package LearnScala
 
 import java.text.SimpleDateFormat
 import java.util.Calendar
 
-import org.apache.spark._
-import org.apache.log4j._
+import org.apache.log4j.{Level, Logger}
+import org.apache.spark.SparkContext
 import org.apache.spark.sql.SQLContext
 
 import scala.collection.mutable.ArrayBuffer
-
 
 object retry {
   Logger.getLogger("org").setLevel(Level.ERROR)
@@ -42,7 +41,6 @@ object retry {
 
     val sc = new SparkContext("local[*]", "retry")
     val sqlContext = new SQLContext(sc)
-    import sqlContext.implicits._
 
     val firstProd = Array(1, "2018-01-01 15:15:20", "2018-01-03 00:00:00")
     val secondProd = Array(2, "2018-03-01 15:25:20", "2018-02-014 00:00:00")
