@@ -4,6 +4,8 @@ import java.text.SimpleDateFormat
 
 case class pattern (userId : Int , start_date: String, end_date: String )
 
+
+
 def generateInterval(arr: Array[Any]): Array[Array[Any]] = {
   val id = arr.head
   val right = arr.tail.tail

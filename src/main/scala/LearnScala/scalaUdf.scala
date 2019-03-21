@@ -46,7 +46,6 @@ spark.read.parquet("/testData/Alexandru/PriceIntervalsRo").where($"mkt_product_i
   .orderBy($"int_start")
   .show(false)
 
-
 // udf transformate in function
 
 def functie(startDate: String, endDate: String) = {

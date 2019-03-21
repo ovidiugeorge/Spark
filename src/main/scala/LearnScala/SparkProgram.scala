@@ -5,7 +5,6 @@ import org.apache.spark.SparkContext
 
 object SparkProgram {
 
-
   Logger.getLogger("org").setLevel(Level.ERROR)
 
   def function1(x: Int): Int = {

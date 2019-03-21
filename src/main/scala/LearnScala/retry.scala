@@ -51,8 +51,6 @@ object retry {
 
     Array(splitDate("2018-03-01 15:25:20", "2018-03-03 00:00:00")).map(line => println(line.deep.mkString("\n")))
 
-
-
   }
 
 
