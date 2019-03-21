@@ -147,7 +147,7 @@
     <property name="ChangesTree.GroupingKeys" value="module&#10;directory&#10;repository" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1553169059610" />
+    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1553169065141" />
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
     <property name="nodejs_npm_path_reset_for_default_project" value="true" />
     <property name="project.structure.last.edited" value="Modules" />
@@ -189,21 +189,21 @@
       </method>
     </configuration>
     <configuration name="FlatMap_Zip" type="Application" factoryName="Application" temporary="true">
-      <option name="MAIN_CLASS_NAME" value="FlatMap_Zip" />
+      <option name="MAIN_CLASS_NAME" value="LearnScala.FlatMap_Zip" />
       <module name="sparkProgram" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
     <configuration name="SparkProgram" type="Application" factoryName="Application" temporary="true">
-      <option name="MAIN_CLASS_NAME" value="SparkProgram" />
+      <option name="MAIN_CLASS_NAME" value="LearnScala.SparkProgram" />
       <module name="sparkProgram" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
     <configuration name="retry" type="Application" factoryName="Application" temporary="true">
-      <option name="MAIN_CLASS_NAME" value="retry" />
+      <option name="MAIN_CLASS_NAME" value="LearnScala.retry" />
       <module name="sparkProgram" />
       <method v="2">
         <option name="Make" enabled="true" />
