@@ -15,7 +15,7 @@ object FlatMap_Zip {
   }
 
   def main(args: Array[String]): Unit = {
-    
+
     val firstProd = Array(Array(1, "1", "2", "3", "4", "5"), Array(3, "11", "21", "31", "41", "51"))
     val res = firstProd.flatMap(line => generateInterval(line))
     val t = (1,"43",5).productIterator.toArray
