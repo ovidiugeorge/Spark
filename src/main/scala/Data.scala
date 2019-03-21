@@ -1,6 +1,3 @@
-%spark
-
-import spark.implicits._
 import java.util.Calendar
 import scala.collection.mutable.ArrayBuffer
 import java.text.SimpleDateFormat

@@ -1,5 +1,7 @@
 import java.text.SimpleDateFormat
 import java.util.Calendar
+
+
 val calcDatesBetween = udf((startDate: String, endDate: String) => {
   val dateFormat = new SimpleDateFormat("yyyy-MM-dd HH:mm:ss")
   val startDateFormated = dateFormat.parse(startDate)
@@ -37,7 +39,7 @@ val calcDatesBetween = udf((startDate: String, endDate: String) => {
 //Apply UDF
 
 spark.read.parquet("/testData/Alexandru/PriceIntervalsRo").where($"mkt_product_id" === 1774 && $"StartDate" === "2016-11-22 00:49:16")
-  .withColumn("intervals", explode(split(calcDatesBetween($"StartDate", $"EndDate"), ",")))
+  .withColumn("intervals", explode(split  ",")))
   .withColumn("int_start", split($"intervals", "[|]")(0))
   .withColumn("int_end", split($"intervals", "[|]")(1))
   .drop($"intervals")
